@@ -94,7 +94,7 @@
     label.width = self.view.width - 60;
     label.centerX = self.view.width / 2;
     label.height = self.view.height - (kiOS7Later ? 64 : 44) - 60;
-    label.top = (kiOS7Later ? 64 : 0) + 30;
+    label.top = iOSNavigationHeight() + 30;
     label.textAlignment = NSTextAlignmentCenter;
     label.textVerticalAlignment = YYTextVerticalAlignmentCenter;
     label.numberOfLines = 0;

@@ -73,6 +73,14 @@ double YYDeviceSystemVersion();
 #define kiOS9Later (kSystemVersion >= 9)
 #endif
 
+NS_INLINE CGFloat iOSNavigationHeight(void) {
+    CGFloat top = kiOS7Later ? 64 : 0;
+    if (@available(iOS 11.0, *)) {
+        top += UIApplication.sharedApplication.keyWindow.safeAreaInsets.top;
+    }
+    return top;
+}
+
 CGSize YYDeviceScreenSize();
 
 

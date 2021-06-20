@@ -54,7 +54,7 @@
     if (kiOS7Later) {
         textView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     }
-    textView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    textView.contentInset = UIEdgeInsetsMake(iOSNavigationHeight(), 0, 0, 0);
     textView.scrollIndicatorInsets = textView.contentInset;
     [self.view addSubview:textView];
     self.textView = textView;
